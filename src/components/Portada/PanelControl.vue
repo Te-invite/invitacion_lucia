@@ -1,23 +1,30 @@
 <script>
+import { inject } from 'vue';
 import Boton from '../Boton.vue';
 export default {
     name:'PanelControl',
     components:{
         Boton
     },
+    setup() {
+        const audioController = inject('audioController');
+        return { audioController };
+    },
     methods:{
         enterWithMusic(){
-            // this.$router.push({ name: 'Invitation' });
+            this.audioController.play();
+            this.$router.push({ name: 'Invitacion' });
         },
         enterWithoutMusic(){
-            // this.$router.push({ name: 'Invitation' });
+            this.audioController.stop();
+            this.$router.push({ name: 'Invitation' });
         }
     }
 }
 </script>
 <template>
     <div class="container__button">
-        <Boton label="INGRESAR CON MUSICA" customClass="btn-mayor btn_ingreso" @click="enterWithMusic"/>
+        <Boton label="INGRESAR CON MUSICA" customClass="btn-mayor" @click="enterWithMusic"/>
         <Boton label="INGRESAR SIN MUSICA" customClass="btn-mayor" @click="enterWithoutMusic"/>
     </div>
     
