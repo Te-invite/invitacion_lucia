@@ -29,4 +29,8 @@ export default{
     font-weight: 400;
     font-style: normal;
 }
+.btn-mayor:hover{
+  background: #A9ABAE;
+  color:white;
+}
 </style>

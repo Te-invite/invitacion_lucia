@@ -6,11 +6,11 @@ const routes=[
         name:'Home',
         component: Home
     },
-    // {
-    //     path:'/invitacion',
-    //     name:'Invitacion',
-    //     component: () => import('../views/Invitacion.vue')
-    // },
+    {
+        path:'/invitacion',
+        name:'Invitacion',
+        component: () => import('../views/Invitacion.vue')
+    },
 ];
 const router = createRouter({
     history: createWebHashHistory(),

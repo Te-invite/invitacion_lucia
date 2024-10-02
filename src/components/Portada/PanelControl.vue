@@ -6,18 +6,18 @@ export default {
     components:{
         Boton
     },
-    setup() {
-        const audioController = inject('audioController');
-        return { audioController };
-    },
+    // setup() {
+    //     const audioController = inject('audioController');
+    //     return { audioController };
+    // },
     methods:{
         enterWithMusic(){
-            this.audioController.play();
+            // this.audioController.play();
             this.$router.push({ name: 'Invitacion' });
         },
         enterWithoutMusic(){
-            this.audioController.stop();
-            this.$router.push({ name: 'Invitation' });
+            // this.audioController.stop();
+            this.$router.push({ name: 'Invitacion' });
         }
     }
 }
