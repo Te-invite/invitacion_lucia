@@ -1,7 +1,13 @@
 <script>
+import SectionPortada from '../components/Portada/SectionPortada.vue';
 export default {
-    name:'Home'
+    name:'Home',
+    components:{
+        SectionPortada
+    }
 }
 </script>
-<template></template>
+<template>
+    <SectionPortada/>
+</template>
 <style></style>

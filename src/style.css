@@ -9,8 +9,10 @@
   --font_family_portada:  "Allura", cursive;
   /*------------- Color texto  -------------------*/
   --color_portada: #525252;
-  --color_second:#8B8B8B;
+  --color_second:#8b8b8b;
   --color_title:#1E1E1E;
+
+  --color_btn:#A9ABAE;
 }
 *{
   margin:0;
