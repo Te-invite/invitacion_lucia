@@ -3,7 +3,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import 'aos/dist/aos.css'; /*animaciones*/
 :roo{
-  font-family:  "Playfair", serif;
-  font-family: "Playfair Display", serif;
-  font-family:  "Allura", cursive;
+  /*------------ Fuentes ---------------*/
+  --font_family_principal:  "Playfair", serif;
+  --font_family_second: "Playfair Display", serif;
+  --font_family_portada:  "Allura", cursive;
+  /*------------- Color texto  -------------------*/
+  --color_portada: #525252;
+  --color_second:#8B8B8B;
+  --color_title:#1E1E1E;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilo del scrollbar*/
+::-webkit-scrollbar {
+  width: .5rem;
+  background-color: var(--color_portada);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color_second);
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color_title);
 }
