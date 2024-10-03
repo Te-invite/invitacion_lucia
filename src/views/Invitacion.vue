@@ -2,13 +2,14 @@
 import SectionHome from '../components/PortadaHome/SectionHome.vue';
 import CurvaOscura from '../components/icons/CurvaOscura.vue';
 import Cuadrante from '../components/PortadaHome/Timer/Cuadrante.vue';
-
+import SesionFrase from '../components/SectionFrase/SesionFrase.vue';
 export default {
     name:'Invitacion',
     components:{
         SectionHome,
         CurvaOscura,
-        Cuadrante
+        Cuadrante,
+        SesionFrase
     }
 }
 </script>
@@ -21,6 +22,7 @@ export default {
             <SectionHome/>
         </div>
         <!-- Frase -->
+        <SesionFrase/>
         <!-- Sesion Fiesta -->
         <!-- Formulario -->
         <!-- Dress Code -->
@@ -50,9 +52,17 @@ export default {
     bottom:0%;
     right:0;
 }
+.section_frase{
+    border:1px solid red;
+    position:relative;
+}
 @media (min-width: 768px) and (max-width: 991px) {
+    .container_invitacion{
+        width:100%;
+        max-height: 100%;
+    }
     .curva_oscura{
-        bottom:-90%;
+        bottom:-55%;
     }
     .cuadrante{
     bottom:-55%;
