@@ -19,10 +19,12 @@ export default {
 <style>
 .container_sesion-frase{
     position:relative;
+    margin-bottom: 3.5rem;
 }
 .cintaP{
     position:absolute;
     bottom:-25%;
+   
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .cintaP{

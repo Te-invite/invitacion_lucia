@@ -3,13 +3,15 @@ import SectionHome from '../components/PortadaHome/SectionHome.vue';
 import CurvaOscura from '../components/icons/CurvaOscura.vue';
 import Cuadrante from '../components/PortadaHome/Timer/Cuadrante.vue';
 import SesionFrase from '../components/SectionFrase/SesionFrase.vue';
+import SectionFiesta from '../components/SectionFiesta.vue';
 export default {
     name:'Invitacion',
     components:{
         SectionHome,
         CurvaOscura,
         Cuadrante,
-        SesionFrase
+        SesionFrase,
+        SectionFiesta
     }
 }
 </script>
@@ -24,6 +26,7 @@ export default {
         <!-- Frase -->
         <SesionFrase/>
         <!-- Sesion Fiesta -->
+         <SectionFiesta/>
         <!-- Formulario -->
         <!-- Dress Code -->
         <!-- Musica -->
