@@ -46,18 +46,34 @@ export default {
 .tit_portada{
     margin-left:2rem;
 }
-@media (min-width: 1025px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .container_portada_home{
         width:100%;
-        min-height:700px;
+        height:900px;
+        border:1px solid red;
     }
     .fotoPortada{
-    width:100%;
-    min-height:100vh;
+        width:100%;
+        height:900px;
     }
     .overlay{
         width:100%;
-        min-height:700px;
+        height:900px;         
+    }
+}
+
+@media (min-width: 1025px) {
+    .container_portada_home{
+        width:100%;
+        height:1200px;
+    }
+    .fotoPortada{
+        width:100%;
+        height:1200px;
+    }
+    .overlay{
+        width:100%;
+        height:1200px;
     }
 }
 </style>

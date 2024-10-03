@@ -1,4 +1,6 @@
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default {
     name:'TituloPortada',
     data(){
@@ -7,11 +9,16 @@ export default {
             title2:'Lucia',
             subtitle:'26.10.24'
         }
+    },
+    mounted(){
+        AOS.init({
+            duration: 700
+        })
     }
 }
 </script>
 <template>
-    <div class="container_title-portada">
+    <div class="container_title-portada" data-aos="zoom-in-up">
         <h1 class="title_portadaHome">{{ title1 }}</h1>
         <h1 class="title_portada">{{ title2 }}</h1>
         <div class="line"></div>
@@ -61,6 +68,21 @@ export default {
     font-style: italic;
     text-align: center;
     font-size: 2rem;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .title_portadaHome{
+        font-size: 25rem;
+    }
+    .title_portada{
+        font-size: 6.5rem;
+    }
+    .line{
+        width:400px;
+        margin-top:3rem;
+    }
+    .subtitle_portadaHome{
+        font-size: 2rem;
+    }
 }
 @media (min-width: 1025px) {
     .title_portadaHome{
