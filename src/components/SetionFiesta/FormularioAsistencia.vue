@@ -8,6 +8,7 @@ export default {
       title: '¿Asistiré a la fiesta?',
       titleSect1: 'ASISTIRÉ:',
       datos:'DATOS PERSONALES:',
+      limite:'(Tenés tiempo hasta el 10 de octubre)',
       options1: 'Sí',
       options2: 'No',
       inputName: 'Nombre completo:',
@@ -68,6 +69,7 @@ export default {
         </div>
         <div class="btnForm">
             <ButtonForm :nombre="nombre" :isAttending="isAttending" :informacionAdicional="informacionAdicional"/>
+            <p class="text_limite">{{ limite }}</p>
         </div>
     </div>
 </template>
@@ -117,6 +119,12 @@ legend{
     font-size: 1rem;
     font-family: "Playfair";
     font-weight: lighter;
+}
+.text_limite{
+    font-size: .75rem;
+    font-family: "Playfair";
+    font-weight: lighter;
+    text-align: center
 }
 
 .form-check-input {

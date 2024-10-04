@@ -7,7 +7,7 @@ import IconParty from '../icons/IconParty.vue';
 import CartelFiesta from './CartelFiesta.vue';
 import FormularioAsistencia from './FormularioAsistencia.vue';
 import CurvaLeftPlateada from '../icons/CurvaLeftPlateada.vue';
-
+import SectionLugar from './SectionLugar.vue';
 export default {
     name:'SectionFiesta',
     components:{
@@ -15,20 +15,17 @@ export default {
         IconParty,
         CartelFiesta,
         FormularioAsistencia,
-        CurvaLeftPlateada
+        CurvaLeftPlateada,
+        SectionLugar
     },
     data(){
         return{
             title:'Fiesta',
-            frase:'Hagamos juntos una fiesta épica. Aquí algunos detalles a tener en cuenta.'
+            frase:'Hagamos juntos una fiesta épica. Aquí algunos detalles a tener en cuenta.',
+            
         }
-    },
-    mounted() {
-    AOS.init({
-      duration: 1200, // Duración de la animación
-      once: true, // La animación solo ocurre una vez
-    });
-  }
+    }
+  
 }
 </script>
 <template>
@@ -43,6 +40,7 @@ export default {
         <span class="content_fraseFiesta" data-aos="fade-down-left">
             <p class="textFraseFiesta">{{ frase }}</p>
         </span>
+        <SectionLugar/>
         <!--Cartel-->
         <CartelFiesta/>
         <!--Formulario-->
@@ -54,12 +52,12 @@ export default {
 <style>
 .container_fiesta{
     width:100%;
-    height:900px;
+    height:1000px;
     display:flex;
     flex-direction: column;
     align-items: center;
     position:relative;
-    margin-bottom:2rem;
+    margin-bottom:5rem;
 }
 .content_fraseFiesta{
     width:80%;
@@ -77,14 +75,14 @@ export default {
 }
 .curvaLeftPlateada{
     position:absolute;
-    bottom:-8%;
+    bottom:-14%;
     z-index: 1;
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .container_fiesta{
         margin-top:5rem;
         width:100%;
-        height:1200%;
+        height:1300px;
     }
     .textFraseFiesta{
         font-size:2rem;
@@ -98,7 +96,7 @@ export default {
     .container_fiesta{
         margin-top:5rem;
         width:100%;
-        min-height:1400px;
+        min-height:1500px;
         margin-bottom:10%;
     }
     .textFraseFiesta{

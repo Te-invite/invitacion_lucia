@@ -23,6 +23,7 @@ export default {
 </template>
 <style>
 .container_cartelFiesta{
+    margin-top: 1rem;
     width:248px;
     height: 148px;
     display: flex;
