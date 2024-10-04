@@ -5,13 +5,13 @@ import SectionGift from './SectionGift.vue';
 import SectionMusic from './SectionMusic.vue';
 import CurvaRightPlateada from '../icons/CurvaRightPlateada.vue';
 export default {
-    name:'SectionEvento',
-    data(){
-        return{
+    name: 'SectionEvento',
+    data() {
+        return {
             background2
         }
     },
-    components:{
+    components: {
         DressCode,
         SectionGift,
         SectionMusic,
@@ -24,69 +24,79 @@ export default {
         <img :src="background2" class="background2" alt="tapiz">
         <div class="content_evento">
             <!-- Dress Code -->
-            <DressCode/>
+            <DressCode />
             <!-- Regalos -->
-            <SectionGift/>
+            <SectionGift />
             <!-- Musica -->
-             <SectionMusic/>
+            <SectionMusic />
         </div>
-        <CurvaRightPlateada class="curvaRight"/>        
+        <CurvaRightPlateada class="curvaRight" />
     </div>
-    
+
 </template>
 <style>
-.container_evento{
+.container_evento {
     position: relative;
     width: 100%;
-    height: auto;
+    min-height:900px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.background2{
+
+.background2 {
     width: 100%;
-    height: 790px;
+    height: 850px;
 }
-.content_evento{
-    margin-top:2rem;
+
+.content_evento {
+    margin-top: 2rem;
     position: absolute;
-    z-index: 2; 
-    
+    z-index: 0;
+
 }
-.curvaRight{
+
+.curvaRight {
     position: absolute;
-    bottom: -4%;
-    right: 0; 
-    width: 100px; 
+    bottom: 0%;
+    right: 0;
+    width: 100%;
     height: auto;
-    z-index: 1; 
+    z-index: 1;
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
-    .content_evento{
+    .content_evento {
         width: 100%;
         height: auto;
     }
-    .curvaRight{
-    bottom: 4%; 
+
+    .curvaRight {
+        bottom: 4%;
     }
-    .background2{
+
+    .background2 {
         width: 100%;
         height: 90%;
     }
-    .content_evento{
-        margin-top:2rem;
-        
+
+    .content_evento {
+        margin-top: 2rem;
+
     }
 }
+
 @media (min-width: 1025px) {
-    
-    .content_evento{
+
+    .content_evento {
         width: 100%;
     }
-    .curvaRight{
-    bottom:0; 
+
+    .curvaRight {
+        bottom: 0;
     }
-    .background2{
+
+    .background2 {
         width: 100%;
         height: 1300px;
     }
