@@ -1,6 +1,4 @@
 <script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 export default {
     name:'TituloPortada',
     data(){
@@ -9,11 +7,6 @@ export default {
             title2:'Lucia',
             subtitle:'26.10.24'
         }
-    },
-    mounted(){
-        AOS.init({
-            duration: 700
-        })
     }
 }
 </script>

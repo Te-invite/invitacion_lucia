@@ -25,13 +25,13 @@
 @media (min-width: 768px) and (max-width: 991px) {
     #cintaPlat{
         width:100vw;
-        height:100%;
+        height:auto;
     }
 }
 @media (min-width: 1025px) {
     #cintaPlat{
         width:100vw;
-        height:100%;
+        height:auto;
     }
 }
 </style>

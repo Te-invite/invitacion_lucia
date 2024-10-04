@@ -1,13 +1,6 @@
 <script>
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 export default {
-    name:'CurvaOscura',
-    mounted(){
-        AOS.init({
-            duration: 700
-        })
-    }
+    name:'CurvaOscura'
 }
 </script>
 <template>

@@ -1,16 +1,10 @@
 <script>
 import Timer from './Timer.vue';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 export default{
     name:'Cuadrante',
     components:{
         Timer
-    },
-    mounted(){
-        AOS.init({
-            duration: 700
-        })
     }
 }
 </script>

@@ -27,14 +27,23 @@ export default {
    
 }
 @media (min-width: 768px) and (max-width: 991px) {
+    .container_sesion-frase{
+        width: 100%;
+        height:630px;
+    }
     .cintaP{
-        bottom:-50%;
+        bottom:-20%;
+        margin:0;
     }
 }
 
 @media (min-width: 1025px) {
+    .container_sesion-frase{
+        width: 100%;
+        height:1200px;
+    }
     .cintaP{
-        bottom:-55%;
+        bottom:0%;
     }
 }
 </style>

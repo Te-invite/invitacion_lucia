@@ -3,7 +3,9 @@ import SectionHome from '../components/PortadaHome/SectionHome.vue';
 import CurvaOscura from '../components/icons/CurvaOscura.vue';
 import Cuadrante from '../components/PortadaHome/Timer/Cuadrante.vue';
 import SesionFrase from '../components/SectionFrase/SesionFrase.vue';
-import SectionFiesta from '../components/SectionFiesta.vue';
+import SectionFiesta from '../components/SetionFiesta/SectionFiesta.vue';
+import SectionEvento from '../components/SectionFiesta2/SectionEvento.vue';
+import SectionRedes from '../components/SectionRedes.vue';
 export default {
     name:'Invitacion',
     components:{
@@ -11,7 +13,9 @@ export default {
         CurvaOscura,
         Cuadrante,
         SesionFrase,
-        SectionFiesta
+        SectionFiesta,
+        SectionEvento,
+        SectionRedes
     }
 }
 </script>
@@ -26,11 +30,10 @@ export default {
         <!-- Frase -->
         <SesionFrase/>
         <!-- Sesion Fiesta -->
-         <SectionFiesta/>
-        <!-- Formulario -->
-        <!-- Dress Code -->
-        <!-- Musica -->
+        <SectionFiesta/>
+         <SectionEvento/>
         <!-- Hashtag -->
+         <SectionRedes/>
     </div>
 </template>
 <style>
@@ -38,25 +41,30 @@ export default {
     width:100%;
     height: 100vh;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
 }
 .portada_home{
     width:100%;
     height:587px;
     position:relative;
 }
-.curva_oscura{
-    position:absolute;
-    z-index:3;
-    bottom:-2%;
-}
+.curva_oscura,
 .cuadrante{
     position:absolute;
     z-index:3;
+}
+
+.curva_oscura{
+    bottom:-2%;
+}
+.cuadrante{
     bottom:0%;
     right:0;
 }
 .section_frase{
-    border:1px solid red;
     position:relative;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -74,6 +82,10 @@ export default {
     }
 }
 @media (min-width: 1025px) {
+    .container_invitacion{
+        width:100%;
+        max-height: 100%;
+    }
     .curva_oscura{
         bottom:-120%;
     }

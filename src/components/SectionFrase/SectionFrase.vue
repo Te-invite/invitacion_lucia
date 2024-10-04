@@ -1,8 +1,6 @@
 <script>
 import ComillaApertura from '../icons/ComillaApertura.vue'
 import ComillaCierre from '../icons/ComillaCierre.vue'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default {
     name:'SectionFrase',
@@ -13,18 +11,13 @@ export default {
     },
     components:{
         ComillaApertura, ComillaCierre
-    },
-    mounted(){
-        AOS.init({
-            duration: 1200
-        })
     }
 }
 </script>
 <template>
     <div class="container_frase">
         <ComillaApertura/>
-        <span class="content_text">
+        <span class="content_text" >
             <h4 class="texto">{{ text }}</h4>
         </span>
         <ComillaCierre/>
