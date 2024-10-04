@@ -45,13 +45,23 @@ export default {
         <!-- Sesion Fiesta -->
         <SectionFiesta/>
          <SectionEvento/>
-         <BotonAudio/>
+         <BotonAudio class="=btnMusic"/>
         <!-- Hashtag -->
          <SectionRedes/>
+        <div class="sesionesTarjetas">
+            <div class="opciones">
+            <a href="#fiesta" class="opcion" @click.prevent="scrollTo('#fiesta')">FIESTA</a>
+            <a href="#asistencia" class="opcion" @click.prevent="scrollTo('#asistencia')">ASISTENCIA</a>
+            <a href="#dresscode" class="opcion" @click.prevent="scrollTo('#dresscode')">DRESS CODE</a>
+            <a href="#gift" class="opcion" @click.prevent="scrollTo('#gift')">REGALOS</a>
+            <a href="#sectionmusic" class="opcion" @click.prevent="scrollTo('#music')">MUSICA</a>
+        </div>
+        </div>
          <SectionFooter/>
     </div>
 </template>
 <style>
+
 .container_invitacion{
     width:100%;
     min-height: 100vh;
@@ -101,6 +111,28 @@ export default {
 
     font-style: italic;
 }
+.sesionesTarjetas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.opciones {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opcion {
+    font-family: "Playfair";
+    font-style: italic;
+    font-size: .5rem;
+    text-align: center;
+    color: #8b8b8b;
+    text-decoration: none;
+}
 @media (min-width: 768px) and (max-width: 991px) {
     .container_invitacion{
         width:100%;
@@ -112,7 +144,9 @@ export default {
     .cuadrante{
     bottom:-55%;
     right:2%;
-    
+    }
+    .opcion {
+        font-size: 1rem;
     }
 }
 @media (min-width: 1025px) {
@@ -126,6 +160,9 @@ export default {
     .cuadrante{
     bottom:-110%;
     right:2%;
+    }
+    .opcion {
+        font-size: 1.5rem;
     }
 }
 </style>

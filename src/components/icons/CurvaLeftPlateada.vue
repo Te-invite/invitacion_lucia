@@ -1,5 +1,7 @@
 <template>
-    <div >
+    <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
         <svg id="curvaLeftPla" viewBox="0 0 428 91" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2004_131)">
                 <mask id="mask0_2004_131" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-3" y="0" width="431"

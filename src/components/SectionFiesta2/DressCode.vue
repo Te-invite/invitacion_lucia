@@ -15,7 +15,7 @@ export default {
 }
 </script>
 <template>
-    <div class="dressCode" data-aos="zoom-out-up">
+    <div id="dresscode" class="dressCode" data-aos="zoom-out-up">
         <TitleSection title="DRESS CODE">
             <template #icon>
                 <IconDress/>

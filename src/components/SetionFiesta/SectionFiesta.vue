@@ -32,7 +32,7 @@ export default {
 }
 </script>
 <template>
-    <div id="#fiesta" class="container_fiesta" >
+    <div id="fiesta" class="container_fiesta" >
         <!--Titulo de la sesion-->
         <TitleSection title="Fiesta">
             <template #icon>
@@ -99,13 +99,13 @@ export default {
         margin-top:5rem;
         width:100%;
         min-height:1400px;
-        margin-bottom:0%;
+        margin-bottom:10%;
     }
     .textFraseFiesta{
         font-size:2rem;
     }
     .curvaLeftPlateada{
-        bottom:-10%;
+        bottom:-20%;
     }
 }
 </style>

@@ -24,7 +24,7 @@ export default {
 }
 </script>
 <template>
-    <div class="containerFormulario" data-aos="fade-up"
+    <div id="asistencia" class="containerFormulario" data-aos="fade-up"
     data-aos-anchor-placement="center-bottom">
         <div class="content_title_formulario">
             <h1 class="titleFormulario">{{ section }}</h1>
@@ -175,7 +175,7 @@ textarea,
 @media (min-width: 1025px) {
     .containerFormulario {
         width:900px;
-        height:600px;
+        height:900px;
     }
 
     .titleFormulario{

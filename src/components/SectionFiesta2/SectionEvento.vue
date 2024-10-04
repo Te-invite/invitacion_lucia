@@ -79,20 +79,16 @@ export default {
     }
 }
 @media (min-width: 1025px) {
-    .container_evento{
-    width: 100%;
-    height: auto;
-    }
+    
     .content_evento{
         width: 100%;
-        height: 65%;
     }
     .curvaRight{
-    bottom:35%; 
+    bottom:0; 
     }
     .background2{
         width: 100%;
-        height: 60%;
+        height: 1300px;
     }
 }
 </style>

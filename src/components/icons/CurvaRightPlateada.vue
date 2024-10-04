@@ -1,5 +1,5 @@
 <template>
-   <svg id="curvaRigthPl" viewBox="0 0 428 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <svg  id="curvaRigthPl" viewBox="0 0 428 91" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2004_174)">
 <mask id="mask0_2004_174" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="428" height="91">
 <path d="M428 0L0 0L0 91L428 91V0Z" fill="white"/>

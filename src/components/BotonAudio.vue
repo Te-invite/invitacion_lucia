@@ -57,5 +57,11 @@ export default {
   background: transparent;
   outline: none;
 }
-
+@media (min-width: 1025px) {
+    .btn-stick {
+    position: fixed;
+    top:10%;
+    right: 1%;
+    }
+}
 </style>

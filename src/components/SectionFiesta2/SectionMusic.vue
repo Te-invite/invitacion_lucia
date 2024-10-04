@@ -41,7 +41,7 @@ export default {
 }
 </script>
 <template>
-    <div class="content_music" data-aos="zoom-in-left">
+    <div  class="content_music" id="sectionmusic" data-aos="zoom-in-left">
         <TitleSection title="MÚSICA">
             <template #icon>
                 <IconMusic/>
