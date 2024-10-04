@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="intagram__animation">
+    <div class="intagram__animation" data-aos="zoom-in">
         <svg class="instagram" width="100" height="120" viewBox="0 0 52 88" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Group">
                 <path id="Vector"

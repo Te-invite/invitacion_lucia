@@ -11,7 +11,7 @@ export default {
 }
 </script>
 <template>
-    <div class="container_sesion-frase">
+    <div class="container_sesion-frase" data-aos="zoom-in">
         <SectionFrase/>
         <CintaPlateada class="cintaP"/>
     </div>

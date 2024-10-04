@@ -1,4 +1,5 @@
 <script>
+import { inject } from "vue";
 import SectionHome from '../components/PortadaHome/SectionHome.vue';
 import CurvaOscura from '../components/icons/CurvaOscura.vue';
 import Cuadrante from '../components/PortadaHome/Timer/Cuadrante.vue';
@@ -6,6 +7,8 @@ import SesionFrase from '../components/SectionFrase/SesionFrase.vue';
 import SectionFiesta from '../components/SetionFiesta/SectionFiesta.vue';
 import SectionEvento from '../components/SectionFiesta2/SectionEvento.vue';
 import SectionRedes from '../components/SectionRedes.vue';
+import SectionFooter from '../components/SectionFooter.vue';
+import BotonAudio from "../components/BotonAudio.vue";
 export default {
     name:'Invitacion',
     components:{
@@ -15,7 +18,17 @@ export default {
         SesionFrase,
         SectionFiesta,
         SectionEvento,
-        SectionRedes
+        SectionRedes,
+        SectionFooter,
+        BotonAudio
+    },
+    methods: {
+        scrollTo(hash) {
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
     }
 }
 </script>
@@ -32,14 +45,16 @@ export default {
         <!-- Sesion Fiesta -->
         <SectionFiesta/>
          <SectionEvento/>
+         <BotonAudio/>
         <!-- Hashtag -->
          <SectionRedes/>
+         <SectionFooter/>
     </div>
 </template>
 <style>
 .container_invitacion{
     width:100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -66,6 +81,25 @@ export default {
 }
 .section_frase{
     position:relative;
+}
+.box_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box_section {
+    font-size: .5rem;
+}
+
+.opcion_menu {
+    margin-left: 1rem;
+    font-family: var(--font_family_principal);
+    color: var(--color__font_primary);
+    font-size: .6rem;
+    text-decoration: none;
+
+    font-style: italic;
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .container_invitacion{

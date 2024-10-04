@@ -1,4 +1,5 @@
 <script>
+
 export default {
   name: 'TitleSection',
   props: {
@@ -6,11 +7,14 @@ export default {
       type: String,
       required: true, // El título debe ser pasado como prop
     }
+  },
+  mounted() {
+    AOS.init();
   }
 }
 </script>
 <template>
-    <div class="container_title">
+    <div class="container_title" data-aos="fade-up">
         <slot name="icon"></slot>
         <h1 class="titleSection" >{{ title }}</h1>
     </div>

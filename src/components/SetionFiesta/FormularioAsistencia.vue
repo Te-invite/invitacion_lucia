@@ -24,7 +24,8 @@ export default {
 }
 </script>
 <template>
-    <div class="containerFormulario">
+    <div class="containerFormulario" data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
         <div class="content_title_formulario">
             <h1 class="titleFormulario">{{ section }}</h1>
         </div>

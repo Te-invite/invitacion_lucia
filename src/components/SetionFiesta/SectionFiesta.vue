@@ -1,4 +1,7 @@
 <script>
+import AOS from 'aos'; // Importar la librería
+import 'aos/dist/aos.css'; // Importar el CSS de AOS
+
 import TitleSection from '../TitleSection.vue';
 import IconParty from '../icons/IconParty.vue';
 import CartelFiesta from './CartelFiesta.vue';
@@ -19,11 +22,17 @@ export default {
             title:'Fiesta',
             frase:'Hagamos juntos una fiesta épica. Aquí algunos detalles a tener en cuenta.'
         }
-    }
+    },
+    mounted() {
+    AOS.init({
+      duration: 1200, // Duración de la animación
+      once: true, // La animación solo ocurre una vez
+    });
+  }
 }
 </script>
 <template>
-    <div class="container_fiesta" >
+    <div id="#fiesta" class="container_fiesta" >
         <!--Titulo de la sesion-->
         <TitleSection title="Fiesta">
             <template #icon>
@@ -31,7 +40,7 @@ export default {
             </template>
         </TitleSection>
         <!--Frase-->
-        <span class="content_fraseFiesta">
+        <span class="content_fraseFiesta" data-aos="fade-down-left">
             <p class="textFraseFiesta">{{ frase }}</p>
         </span>
         <!--Cartel-->
@@ -54,6 +63,7 @@ export default {
 }
 .content_fraseFiesta{
     width:80%;
+    height:100%;
     display:flex;
     flex-direction: column;
 }

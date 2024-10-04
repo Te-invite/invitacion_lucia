@@ -30,7 +30,7 @@ export default {
         }).then((result) => {
             if (result.isConfirmed) {
                 // Si el usuario presiona "OK"
-                window.open("https://music.youtube.com/playlist?list=PLGkl6CwAcV6NIeC_JU0mpd4w2uo11flxq&jct=QWl4kyacPqoSRROUV8VFoA", "_blank");
+                window.open("");
             } else if (result.dismiss === Swal.DismissReason.cancel) {
                 // Si el usuario presiona "Cancelar", cierra el popup de SweetAlert
                 this.togglePopUp();
@@ -41,7 +41,7 @@ export default {
 }
 </script>
 <template>
-    <div class="content_music">
+    <div class="content_music" data-aos="zoom-in-left">
         <TitleSection title="MÚSICA">
             <template #icon>
                 <IconMusic/>

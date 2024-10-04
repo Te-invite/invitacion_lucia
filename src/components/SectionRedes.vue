@@ -34,12 +34,12 @@ export default {
 }
 </script>
 <template>
-    <div class="containerRedes">
-        <span class="content_textRedes">
+    <div class="containerRedes" >
+        <span class="content_textRedes" data-aos="flip-left">
             <h4 class="textoRedes">{{ text }}</h4>
         </span>
         <IconInstagram />
-        <p class="text_hashtag">{{ hastag }}</p>
+        <p class="text_hashtag" data-aos="zoom-out-right">{{ hastag }}</p>
         <Boton label="COPIAR #" customClass="btn-mayor" @click="copyToClipboard(hastag)" />
     </div>
 </template>
@@ -47,7 +47,7 @@ export default {
 .containerRedes {
     margin: 2rem 0;
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;

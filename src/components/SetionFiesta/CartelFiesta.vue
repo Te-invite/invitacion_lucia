@@ -12,7 +12,7 @@ export default {
 }
 </script>
 <template>
-    <div class="container_cartelFiesta">
+    <div class="container_cartelFiesta" data-aos="flip-left">
         <img :src="Cartel" class="imagen_1" alt="marco">
         <div class="contantent_text">
             <h1 class="titulo_cartelFiesta">{{ title }}</h1>

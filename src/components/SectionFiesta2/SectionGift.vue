@@ -15,7 +15,7 @@ export default {
 }
 </script>
 <template>
-    <div class="content_gift">
+    <div class="content_gift" data-aos="zoom-out">
         <TitleSection title="REGALOS">
             <template #icon>
                 <IconGift/>
