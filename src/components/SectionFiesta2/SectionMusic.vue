@@ -30,7 +30,7 @@ export default {
         }).then((result) => {
             if (result.isConfirmed) {
                 // Si el usuario presiona "OK"
-                window.open("");
+                window.open("https://www.youtube.com/playlist?list=PL4WV8HJeFYo9r2YGguD5aSVjOrliN4qDv&jct=fp4__UsVZeNAm2AoTazNTw");
             } else if (result.dismiss === Swal.DismissReason.cancel) {
                 // Si el usuario presiona "Cancelar", cierra el popup de SweetAlert
                 this.togglePopUp();
