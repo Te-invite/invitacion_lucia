@@ -42,8 +42,8 @@ export default {
 </script>
 <template>
     <div class="buttonForm">
-        <BotonBase label="CONFIRMAR A MAMÁ" customClass="btn-mayor"  @click="enviarAWhatsApp('2983551277')"/>
-        <BotonBase label="CONFIRMAR A PAPÁ" customClass="btn-mayor"  @click="enviarAWhatsApp('2983541367')"/>
+        <BotonBase label="CONFIRMAR A MAMÁ" customClass="btn-mayor"  @click="enviarAWhatsApp('')"/>
+        <BotonBase label="CONFIRMAR A PAPÁ" customClass="btn-mayor"  @click="enviarAWhatsApp('')"/>
         
     </div>
 </template>
